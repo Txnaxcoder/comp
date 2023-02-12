@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+  
+
+<html>
+  
+<script src="https://cdn.tailwindcss.com"></script>
+
+       <header class="text-gray-400 bg-gray-900 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl">Recyclopedia</span>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 hover:text-white" href="#section-2">First ll </a>
+      <a class="mr-5 hover:text-white" href="#3">Second Link</a>
+      <a class="mr-5 hover:text-white" href="#finder">Recycling finder</a>
+      <a class="mr-5 hover:text-white">Fourth Link</a>
+    </nav>
+    <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<section class="text-gray-400 bg-gray-900 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">"Make a Big Difference 
+        <br class="hidden lg:inline-block">– Start Recycling Today!"
+      </h1>
+      <p class="mb-8 leading-relaxed">
+        Recycling is more than just the right thing to do – it can also benefit your wallet and your community! Recycling helps reduce pollution and conserve natural resources, while creating jobs and stimulating the economy. Plus, it’s easy to do! All you need to do is separate your recyclable materials from your regular trash and place them in the appropriate recycling bin. With a few simple steps, you can make a big difference for our planet. Start recycling today and join the movement for a greener tomorrow!</p>
+      <div class="flex justify-center">
+        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+        <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Button</button>
+      </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      
+      <img src="{{ url_for('send_image', path='hero.png') }}" alt="hero image">
+
+
+    </div>
+  </div>
+</section>
+
+<section class="text-gray-400 bg-gray-900 body-font" id="section-2">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <h2 class="sm:text-3xl text-2xl text-white font-medium title-font mb-2 md:w-2/5">About us</h2>
+    <div class="md:w-3/5 md:pl-6">
+      <p class="leading-relaxed text-base">Welcome to our recycling website! We are proud to help individuals, communities, and businesses take steps towards a greener future. Our goal is to make it easy to find and access recycling centers in your area. With our website, you can easily locate the nearest recycling center and learn more about what materials are accepted and how to properly recycle them. We are committed to providing the most up-to-date information about recycling centers and the best strategies to help reduce waste and conserve energy. Thank you for joining us in our mission to create a more sustainable world!</p>
+      <div class="flex md:mt-4 mt-6">
+        <button class="inline-flex text-white bg-indigo-500 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+        <a class="text-indigo-400 inline-flex items-center ml-4">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="text-gray-400 bg-gray-900 body-font" id="3">
+  <h2 style="text-align:left; color:white; font-size: 36px; font-family: Arial, sans-serif;padding: 30px;">Sustainable Products</h2>
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://source.unsplash.com/random/720x400" alt="blog">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CATEGORY</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">The Catalyzer</h1>
+            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-800">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-500 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://source.unsplash.com/random/720x400" alt="blog">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CATEGORY</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">The 400 Blows</h1>
+            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-800">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-500 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://source.unsplash.com/random/720x400" alt="blog">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CATEGORY</h2>
+            <h1 class="title-font text-lg font-medium text-white mb-3">Shooting Stars</h1>
+            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-indigo-400 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-800">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-500 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    
+    <style>
+      #map {
+        width: 100%;
+        height: 300px;
+        display: none;
+      }
+      .info {
+        text-align: center;
+        margin-top: 20px;
+        color: white;
+      }
+      select {
+        background-color: #818CF8;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        margin: 20px auto;
+        display: block;
+        text-align: center;
+      }
+      body {
+        background-color: #111827;
+      }
+    </style>
+  </head>
+  <section id="finder" style="background-color: #1d273c;">
+    <h2 style="text-align:left; color:white; font-size: 36px; font-family: Arial, sans-serif; padding: 30px;">Recycling Center Finder </h2>
+    <div class="info">Select a waste type and find the nearest recycling center:</div>
+    <select id="wasteType" class="select-option">
+      <option value="">Select Waste Type</option>
+      <option value="plastic">Plastic</option>
+      <option value="paper">Paper</option>
+      <option value="E-Waste">E-Waste</option>
+      <option value="metal">Metal</option>
+    </select>
+    <br>
+    <br>
+    <iframe id="map" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div class="info" id="info">Please select a waste type and allow access to your location</div>
+    <script>
+      document.getElementById("wasteType").addEventListener("change", function () {
+        let wasteType = this.value;
+        let info = document.getElementById("info");
+        let map = document.getElementById("map");
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition((position) => {
+            let lat = position.coords.latitude;
+            let lng = position.coords.longitude;
+            let query;
+            if (wasteType === "plastic") {
+              query = "plastic recycling center";
+            } else if (wasteType === "paper") {
+              query = "paper recycling center";
+            } else if (wasteType === "E-Waste") {
+              query = "E-Waste recycling center";
+            } else if (wasteType === "metal") {
+              query = "metal recycling center";
+            } else {
+              info.innerHTML = "Please select a waste type";
+              return;
+            }
+            map.src =
+              "https://maps.google.com/maps?q=" +
+              query +
+              "&z=14&output=embed&iwloc=near&mrt=loc&t=m&layer=c&cbll=" +
+              lat +
+              "," +
+              lng;
+            map.style.display = "block";
+          }, (error) => {
+            info.innerHTML = "Geolocation is not supported by your browser.";
+});
+} else {
+info.innerHTML = "Geolocation is not supported by your browser.";
+}
+});
+</script>
+
+</section>
+
+
+<section class="text-gray-400 bg-gray-900 body-font relative">
+  <div class="container px-5 py-24 mx-auto" style="background-color: #1d273c;">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contact Us</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.</p>
+    </div>
+    <form action="/send_email" method="POST">
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="name" class="leading-7 text-sm text-gray-400">Name</label>
+            <input type="text" id="name" name="name" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+            <input type="email" id="email" name="email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 ">
+          <div class="relative">
+            <label for="message" class="leading-7 text-sm text-gray-400">Subject</label>
+            <textarea  type="text" id="subject" name="subject" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <div class="relative">
+            <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
+            <textarea id="message" name="message" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+        </div>
+        
+        <div class="p-2 w-full">
+          <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+        </div>
+      </form>
+        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+          <a class="text-indigo-400">example@email.com</a>
+          <p class="leading-normal my-5">49 Smith St.
+            <br>Saint Cloud, MN 56301
+          </p>
+          <span class="inline-flex">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-4 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-4 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-4 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="p-8" style="background-color: #111827;">
+  <div class=" p-4 rounded-lg shadow-xl py-8 mt-12" style="background-color: #1d273c;">
+      <h4 class="text-4xl font-bold text-white-800 tracking-widest uppercase text-center">FAQ</h4>
+      <p class="text-center text-gray-600 text-sm mt-2">Here are some of the frequently asked questions</p>
+      <div class="space-y-12 px-2 xl:px-16 mt-12">
+          <div class="mt-4 flex">
+              <div>
+                  <div class="flex items-center h-16 border-l-4 border-blue-600">
+                      <span class="text-4xl text-blue-600 px-4">Q.</span>
+                  </div>
+                  <div class="flex items-center h-16 border-l-4 border-gray-400">
+                      <span class="text-4xl text-gray-400 px-4">A.</span>
+                  </div>
+              </div>
+              <div>
+                  <div class="flex items-center h-16">
+                      <span class="text-lg text-blue-600 font-bold">Lorem ipsum dolor sit amet?</span>
+                  </div>
+                  <div class="flex items-center py-2">
+                      <span class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dignissimos. Neque eos, dignissimos provident reiciendis debitis repudiandae commodi perferendis et itaque, similique fugiat cumque impedit iusto vitae dolorum. Nostrum, fugit!</span>
+
+                  </div>
+              </div>
+          </div>
+
+          <div class="mt-4 flex">
+              <div>
+                  <div class="flex items-center h-16 border-l-4 border-blue-600">
+                      <span class="text-4xl text-blue-600 px-4">Q.</span>
+                  </div>
+                  <div class="flex items-center h-16 border-l-4 border-gray-400">
+                      <span class="text-4xl text-gray-400 px-4">A.</span>
+                  </div>
+              </div>
+              <div>
+                  <div class="flex items-center h-16">
+                      <span class="text-lg text-blue-600 font-bold">Consectetur adipisicing elit?</span>
+                  </div>
+                  <div class="flex items-center py-2">
+                      <span class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dignissimos. Neque eos, dignissimos provident reiciendis debitis repudiandae commodi perferendis et itaque, similique fugiat cumque impedit iusto vitae dolorum. Nostrum, fugit!</span>
+
+                  </div>
+              </div>
+          </div>
+
+          <div class="mt-4 flex">
+              <div>
+                  <div class="flex items-center h-16 border-l-4 border-blue-600">
+                      <span class="text-4xl text-blue-600 px-4">Q.</span>
+                  </div>
+                  <div class="flex items-center h-16 border-l-4 border-gray-400">
+                      <span class="text-4xl text-gray-400 px-4">A.</span>
+                  </div>
+              </div>
+              <div>
+                  <div class="flex items-center h-16">
+                      <span class="text-lg text-blue-600 font-bold">Neque eos, dignissimos provident reiciendis debitis?</span>
+                  </div>
+                  <div class="flex items-center py-2">
+                      <span class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dignissimos. Neque eos, dignissimos provident reiciendis debitis repudiandae commodi perferendis et itaque, similique fugiat cumque impedit iusto vitae dolorum. Nostrum, fugit!</span>
+
+                  </div>
+              </div>
+          </div>
+
+          <div class="mt-4 flex">
+              <div>
+                  <div class="flex items-center h-16 border-l-4 border-blue-600">
+                      <span class="text-4xl text-blue-600 px-4">Q.</span>
+                  </div>
+                  <div class="flex items-center h-16 border-l-4 border-gray-400">
+                      <span class="text-4xl text-gray-400 px-4">A.</span>
+                  </div>
+              </div>
+              <div>
+                  <div class="flex items-center h-16">
+                      <span class="text-lg text-blue-600 font-bold">Repudiandae commodi perferendis et itaque?</span>
+                  </div>
+                  <div class="flex items-center py-2">
+                      <span class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dignissimos. Neque eos, dignissimos provident reiciendis debitis repudiandae commodi perferendis et itaque, similique fugiat cumque impedit iusto vitae dolorum. Nostrum, fugit!</span>
+
+                  </div>
+              </div>
+          </div>
+
+          <div class="mt-4 flex">
+              <div>
+                  <div class="flex items-center h-16 border-l-4 border-blue-600">
+                      <span class="text-4xl text-blue-600 px-4">Q.</span>
+                  </div>
+                  <div class="flex items-center h-16 border-l-4 border-gray-400">
+                      <span class="text-4xl text-gray-400 px-4">A.</span>
+                  </div>
+              </div>
+              <div>
+                  <div class="flex items-center h-16">
+                      <span class="text-lg text-blue-600 font-bold">Similique fugiat cumque?</span>
+                  </div>
+                  <div class="flex items-center py-2">
+                      <span class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dignissimos. Neque eos, dignissimos provident reiciendis debitis repudiandae commodi perferendis et itaque, similique fugiat cumque impedit iusto vitae dolorum. Nostrum, fugit!</span>
+
+                  </div>
+              </div>
+          </div>
+
+          <div class="mt-4 flex">
+              <div>
+                  <div class="flex items-center h-16 border-l-4 border-blue-600">
+                      <span class="text-4xl text-blue-600 px-4">Q.</span>
+                  </div>
+                  <div class="flex items-center h-16 border-l-4 border-gray-400">
+                      <span class="text-4xl text-gray-400 px-4">A.</span>
+                  </div>
+              </div>
+              <div>
+                  <div class="flex items-center h-16">
+                      <span class="text-lg text-blue-600 font-bold">Impedit iusto vitae dolorum, nostrum fugit?</span>
+                  </div>
+                  <div class="flex items-center py-2">
+                      <span class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dignissimos. Neque eos, dignissimos provident reiciendis debitis repudiandae commodi perferendis et itaque, similique fugiat cumque impedit iusto vitae dolorum. Nostrum, fugit!</span>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div data-tf-popover="lzB1A41u" data-tf-opacity="100" data-tf-iframe-props="title=website" data-tf-transitive-search-params data-tf-button-color="#0445AF" data-tf-medium="snippet" style="all:unset;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+
+</html>
+
+
+
+
+
+
+</html>
