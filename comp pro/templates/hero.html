@@ -3,6 +3,9 @@
   
 
 <html>
+  <header>
+
+  </header>
   
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -28,11 +31,11 @@
   </div>
 </header>
 
-<section class="text-gray-400 bg-gray-900 body-font">
+<section class="text-gray-400 bg-gray-900 body-font paralax" >
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">"Make a Big Difference 
-        <br class="hidden lg:inline-block">– Start Recycling Today!"
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white" id="typewriter">"Make a Big Difference 
+        <br class="hidden lg:inline-block " >– Start Recycling Today!"
       </h1>
       <p class="mb-8 leading-relaxed">
         Recycling is more than just the right thing to do – it can also benefit your wallet and your community! Recycling helps reduce pollution and conserve natural resources, while creating jobs and stimulating the economy. Plus, it’s easy to do! All you need to do is separate your recyclable materials from your regular trash and place them in the appropriate recycling bin. With a few simple steps, you can make a big difference for our planet. Start recycling today and join the movement for a greener tomorrow!</p>
@@ -50,7 +53,7 @@
   </div>
 </section>
 
-<section class="text-gray-400 bg-gray-900 body-font" id="section-2">
+<section class="text-gray-400 bg-gray-900 body-font paralax" id="section-2">
   <div class="container px-5 py-24 mx-auto flex flex-wrap">
     <h2 class="sm:text-3xl text-2xl text-white font-medium title-font mb-2 md:w-2/5">About us</h2>
     <div class="md:w-3/5 md:pl-6">
@@ -67,7 +70,33 @@
   </div>
 </section>
 
-<section class="text-gray-400 bg-gray-900 body-font" id="3">
+<style> 
+#typewriter {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid orange; /* The typewriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 6s steps(30, end) infinite alternate,
+          blink-caret .75s step-end infinite;
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+        from { width: 100% }
+        to { width: 0 }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange }
+      }
+</style>
+
+<section class="text-gray-400 bg-gray-900 body-font paralax" id="3">
   <h2 style="text-align:left; color:white; font-size: 36px; font-family: Arial, sans-serif;padding: 30px;">Sustainable Products</h2>
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-4">
@@ -194,7 +223,7 @@
       }
     </style>
   </head>
-  <section id="finder" style="background-color: #1d273c;">
+  <section id="finder" style="background-color: #111827;" class="paralax">
     <h2 style="text-align:left; color:white; font-size: 36px; font-family: Arial, sans-serif; padding: 30px;">Recycling Center Finder </h2>
     <div class="info">Select a waste type and find the nearest recycling center:</div>
     <select id="wasteType" class="select-option">
@@ -250,7 +279,7 @@ info.innerHTML = "Geolocation is not supported by your browser.";
 </section>
 
 
-<section class="text-gray-400 bg-gray-900 body-font relative">
+<section class="text-gray-400 bg-gray-900 body-font relative  ">
   <div class="container px-5 py-24 mx-auto" style="background-color: #1d273c;">
     <div class="flex flex-col text-center w-full mb-12">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contact Us</h1>
@@ -324,7 +353,7 @@ info.innerHTML = "Geolocation is not supported by your browser.";
 
 
 
-<div class="p-8" style="background-color: #111827;">
+<div class="p-8 paralax" style="background-color: #111827;" >
   <div class=" p-4 rounded-lg shadow-xl py-8 mt-12" style="background-color: #1d273c;">
       <h4 class="text-4xl font-bold text-white-800 tracking-widest uppercase text-center">FAQ</h4>
       <p class="text-center text-gray-600 text-sm mt-2">Here are some of the frequently asked questions</p>
@@ -456,9 +485,17 @@ info.innerHTML = "Geolocation is not supported by your browser.";
 
 </html>
 
-
+<style>.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
 
 
 
 
 </html>
+
