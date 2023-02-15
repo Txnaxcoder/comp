@@ -10,20 +10,20 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
        <header class="text-gray-400 bg-gray-900 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" >
     <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
       </svg>
       <span class="ml-3 text-xl">Recyclopedia</span>
     </a>
-    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-white" href="#section-2">First ll </a>
-      <a class="mr-5 hover:text-white" href="#3">Second Link</a>
-      <a class="mr-5 hover:text-white" href="#finder">Recycling finder</a>
-      <a class="mr-5 hover:text-white">Fourth Link</a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center" >
+      <a class="mr-5 hover:text-white" href="#section-2">About us </a>
+      <a class="mr-5 hover:text-white" href="#3">Sustainable Products</a>
+      <a class="mr-5 hover:text-white" href="#finder">Recycle shop finder</a>
+      <a class="mr-5 hover:text-white" href="#con">FAQ</a>
     </nav>
-    <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
+    <button onclick = "window.location.href='#faq';" class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Contact us
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
@@ -40,8 +40,8 @@
       <p class="mb-8 leading-relaxed">
         Recycling is more than just the right thing to do – it can also benefit your wallet and your community! Recycling helps reduce pollution and conserve natural resources, while creating jobs and stimulating the economy. Plus, it’s easy to do! All you need to do is separate your recyclable materials from your regular trash and place them in the appropriate recycling bin. With a few simple steps, you can make a big difference for our planet. Start recycling today and join the movement for a greener tomorrow!</p>
       <div class="flex justify-center">
-        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-        <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Button</button>
+        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" onclick = "window.location.href='https://en.wikipedia.org/wiki/Recycling';">Learn more</button>
+        <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg" onclick = "window.location.href='#con';" >Contact us</button>
       </div>
     </div>
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -70,7 +70,11 @@
   </div>
 </section>
 
+
 <style> 
+
+
+@font-face { font-family: Delicious; src: url('/static/font/Mona-Sans-Black.otf'); } 
 #typewriter {
         overflow: hidden; /* Ensures the content is not revealed until the animation */
         border-right: .15em solid orange; /* The typewriter cursor */
@@ -79,6 +83,7 @@
         animation: 
           typing 6s steps(30, end) infinite alternate,
           blink-caret .75s step-end infinite;
+        font-family: Delicious;  
       }
       
       /* The typing effect */
@@ -223,7 +228,7 @@
       }
     </style>
   </head>
-  <section id="finder" style="background-color: #111827;" class="paralax">
+  <section id="finder" style="background-color: #111827; " >
     <h2 style="text-align:left; color:white; font-size: 36px; font-family: Arial, sans-serif; padding: 30px;">Recycling Center Finder </h2>
     <div class="info">Select a waste type and find the nearest recycling center:</div>
     <select id="wasteType" class="select-option">
@@ -279,8 +284,8 @@ info.innerHTML = "Geolocation is not supported by your browser.";
 </section>
 
 
-<section class="text-gray-400 bg-gray-900 body-font relative  ">
-  <div class="container px-5 py-24 mx-auto" style="background-color: #1d273c;">
+<section class="text-gray-400 bg-gray-900 body-font relative  " id="con">
+  <div class="container px-5 py-24 mx-auto rounded-lg" style="background-color: #1d273c;">
     <div class="flex flex-col text-center w-full mb-12">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contact Us</h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.</p>
@@ -353,7 +358,7 @@ info.innerHTML = "Geolocation is not supported by your browser.";
 
 
 
-<div class="p-8 paralax" style="background-color: #111827;" >
+<div class="p-8 paralax" style="background-color: #111827;" id="faq" >
   <div class=" p-4 rounded-lg shadow-xl py-8 mt-12" style="background-color: #1d273c;">
       <h4 class="text-4xl font-bold text-white-800 tracking-widest uppercase text-center">FAQ</h4>
       <p class="text-center text-gray-600 text-sm mt-2">Here are some of the frequently asked questions</p>
@@ -482,6 +487,8 @@ info.innerHTML = "Geolocation is not supported by your browser.";
 </div>
 
 <div data-tf-popover="lzB1A41u" data-tf-opacity="100" data-tf-iframe-props="title=website" data-tf-transitive-search-params data-tf-button-color="#0445AF" data-tf-medium="snippet" style="all:unset;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+
+
 
 </html>
 
